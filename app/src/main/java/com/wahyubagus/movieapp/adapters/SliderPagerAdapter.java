@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
 import com.wahyubagus.movieapp.R;
-import com.wahyubagus.movieapp.Slide;
+import com.wahyubagus.movieapp.dto.Slide;
 
 import java.util.List;
 

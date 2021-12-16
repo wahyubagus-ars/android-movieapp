@@ -1,4 +1,4 @@
-package com.wahyubagus.movieapp;
+package com.wahyubagus.movieapp.dto;
 
 public class Slide {
 

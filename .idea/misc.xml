@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/babay/AndroidStudioProjects/MovieApp/app/src/main/res/drawable/default_indicator.xml" value="0.146875" />
         <entry key="..\:/Users/babay/AndroidStudioProjects/MovieApp/app/src/main/res/drawable/gradient_bg.xml" value="0.146875" />
+        <entry key="..\:/Users/babay/AndroidStudioProjects/MovieApp/app/src/main/res/drawable/indicator_selector.xml" value="0.146875" />
+        <entry key="..\:/Users/babay/AndroidStudioProjects/MovieApp/app/src/main/res/drawable/selected_indicator.xml" value="0.146875" />
         <entry key="..\:/Users/babay/AndroidStudioProjects/MovieApp/app/src/main/res/layout/activity_home.xml" value="0.18" />
         <entry key="..\:/Users/babay/AndroidStudioProjects/MovieApp/app/src/main/res/layout/activity_main.xml" value="0.16" />
         <entry key="..\:/Users/babay/AndroidStudioProjects/MovieApp/app/src/main/res/layout/slide_item.xml" value="0.22" />

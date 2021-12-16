@@ -18,4 +18,17 @@
         tools:ignore="MissingConstraints">
 
     </androidx.viewpager.widget.ViewPager>
+
+    <com.google.android.material.tabs.TabLayout
+        app:tabGravity="center"
+        android:background="@color/primary"
+        android:id="@+id/indicator"
+        app:tabBackground="@drawable/indicator_selector"
+        app:tabIndicatorHeight="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slider_pager">
+    </com.google.android.material.tabs.TabLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

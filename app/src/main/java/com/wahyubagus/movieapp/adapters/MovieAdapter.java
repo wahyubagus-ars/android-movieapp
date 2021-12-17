@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.wahyubagus.movieapp.R;
 import com.wahyubagus.movieapp.dto.Movie;
+import com.wahyubagus.movieapp.listener.MovieItemClickListener;
 
 import org.w3c.dom.Text;
 
@@ -21,10 +22,12 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MyViewHolder
 
     Context context;
     List<Movie> mData;
+    MovieItemClickListener movieItemClickListener;
 
-    public MovieAdapter(Context context, List<Movie> mData) {
+    public MovieAdapter(Context context, List<Movie> mData, MovieItemClickListener movieItemClickListener) {
         this.context = context;
         this.mData = mData;
+        this.movieItemClickListener = movieItemClickListener;
     }
 
     @NonNull
@@ -58,7 +61,12 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MyViewHolder
             tvTitle = itemView.findViewById(R.id.itemMovieTitle);
             imageView = itemView.findViewById(R.id.itemMovieImg);
 
-
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    movieItemClickListener.onMovieClick(mData.get(getAdapterPosition()), imageView);
+                }
+            });
         }
     }
 

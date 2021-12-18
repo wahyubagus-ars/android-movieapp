@@ -60,7 +60,7 @@ public class HomeActivity extends AppCompatActivity implements MovieItemClickLis
         // ini data
 
         List<Movie> movieList = new ArrayList<>();
-        movieList.add(new Movie("Dunkrik", R.drawable.dunkrik));
+        movieList.add(new Movie("Dunkrik", R.drawable.dunkrik, R.drawable.dunkrik_cover));
         movieList.add(new Movie("Her", R.drawable.her));
         movieList.add(new Movie("Logan", R.drawable.logan));
         movieList.add(new Movie("Bird Box", R.drawable.bird_box));
@@ -83,6 +83,7 @@ public class HomeActivity extends AppCompatActivity implements MovieItemClickLis
         Intent intent = new Intent(this, DetailActivity.class);
         intent.putExtra("title", movie.getTitle());
         intent.putExtra("imgURL", movie.getThumbnail());
+        intent.putExtra("imgCover", movie.getCoverPhoto());
 
         // lets craete the animation
         ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(
